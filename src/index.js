@@ -8,6 +8,6 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './app/App'
 import 'jquery'
-import 'popper.js'
+// import 'popper.js'
 
 ReactDOM.render(<App />, document.getElementById('root'))
