@@ -1,6 +1,8 @@
 import React from 'react'
 import faker from 'faker';
 import Container from './Container'
+import headimg from '../../../../img/header.jpg'
+import sec1 from '../../../../img/header.jpg'
 
 const HomePage = () => {
     return <div>
@@ -17,8 +19,8 @@ const HomePage = () => {
     <Container
       isLeft={true}
       bgcolor="lightgrey"
-      src="/img/sec1.png"
-      alt=""
+      src={headimg}
+      alt={sec1}
       h1="Simple and Fast"
       h5={faker.lorem.sentence()}
       p={faker.lorem.paragraph()}
