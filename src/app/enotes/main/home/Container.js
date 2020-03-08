@@ -19,7 +19,8 @@ const TextContainer = ({h1, h5, p}) => {
 const Footer = () => {
     return <div className="container" style={{paddingTop: 2 + 'em', paddingBottom: 2 + 'em'}}>
         <p>
-            Copyright © Firnaz luztian | <a href='https://firnazluztian.github.io/'>firnazluztian.github.io</a> | <a href='https://github.com/firnazluztian'>github.com/firnazluztian</a>
+            Copyright © Firnaz luztian | 
+            <a href='https://firnazluztian.github.io/'>firnazluztian.github.io</a> | <a href='https://github.com/firnazluztian'>github.com/firnazluztian</a> | <span className='text-primary' onClick={() => navigate('/admin')}>administrator</span> 
         </p>
     </div>
 }

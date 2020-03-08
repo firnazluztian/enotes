@@ -1,5 +1,6 @@
 // for debugging purposes
 import axios from 'axios'
+import {navigate} from '@reach/router'
 import React, { useEffect, useState, Fragment } from 'react'
 import Space from '../../widgets/layout/Space'
 import { toastSuccess, toastWarning } from '../../widgets/layout/toaster'
@@ -88,7 +89,12 @@ const AdminPage = () => {
             {isAdmin &&
             <div className='container'>
                 <Space marginTop="5em" />
-                <h5>Registered user</h5>
+                <Flex>
+                    <h5>Registered user</h5>
+                    <Space marginRight="1em" />
+                    <button className='button is-danger small' onClick={() => navigate('/home')}>Logout</button>
+                </Flex>
+                
                 {!user
                 ? <p>Unable to retreive data, please check your connection</p>
                 : <table className="table table-hover">

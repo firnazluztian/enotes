@@ -10,7 +10,7 @@ const HomePage = () => {
     <Container
       isMain={true}
       bgcolor="white"
-      src="/img/header.jpg"
+      src={headimg}
       alt=""
       h1="E-Student Notes"
       h5="The only app that you will ever need for your notes taking"
